@@ -1,0 +1,21 @@
+{
+  "name": "Aniket Ghosh",
+  "github_id": "Itsme-aniketghosh",
+  "val_bpb": 0.0,
+  "val_loss": 0.0,
+  "run_id": "proteus_v8",
+  "num_layers": 11,
+  "d_model": 512,
+  "int_bits": 6,
+  "ttt_epochs": 5,
+  "ttt_rank": 8,
+  "ttt_lr": 0.01,
+  "ema_decay": 0.9999,
+  "xsa_layers": 4,
+  "bigram_vocab_size": 2048,
+  "warmdown_iters": 3500,
+  "qat_start_frac": 0.15,
+  "eval_stride": 64,
+  "platform": "Northeastern University HPC Discovery + RunPod 8xH100 SXM",
+  "notes": "11L Int6 + EMA + XSA4 + LoRA TTT v8 (5ep cosine, score every epoch)"
+}
