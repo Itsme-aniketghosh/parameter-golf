@@ -1,12 +1,12 @@
 #!/bin/bash
 #SBATCH --job-name=pg_v8_smoke
-#SBATCH --partition=gpu
-#SBATCH --gres=gpu:1
+#SBATCH --partition=sharing
+#SBATCH --gres=gpu:v100-sxm2:1
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=32G
-#SBATCH --time=00:45:00
+#SBATCH --time=01:00:00
 #SBATCH --output=/scratch/ghosh.anik/parameter-golf-work/logs/smoke_%j.out
 #SBATCH --error=/scratch/ghosh.anik/parameter-golf-work/logs/smoke_%j.err
 
